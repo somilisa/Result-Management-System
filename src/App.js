@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { sortedInterns } from "./data";
+import InternCard from "./singleIntern";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav>Learnable</nav>
       </header>
+      <main>
+        <div class="table-wrapper">
+          <h2>FRONTEND INTERNS</h2>
+          <div className="table">
+            <div className="table-header">
+              <p>Name</p>
+              <p>Attendance</p>
+              <p>Appraisal</p>
+              <p>Total</p>
+            </div>
+            {sortedInterns.map((intern) => (
+              <InternCard
+                key={intern.id}
+                {...intern}
+                overallGrade={intern.overallGrade}
+              />
+            ))}
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
