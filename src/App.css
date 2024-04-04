@@ -47,13 +47,19 @@
 main {
   width: 100vw;
 }
+
+.table {
+  min-width: 1152px;
+}
 .table-wrapper {
   width: 90%;
   max-width: 1280px;
   margin: 0 auto;
+  overflow-x: scroll;
 }
-.table-wrapper h2 {
+h2 {
   text-align: center;
+  line-height: 2;
 }
 .table-header {
   display: flex;

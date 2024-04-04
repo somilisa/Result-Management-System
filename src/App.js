@@ -10,8 +10,8 @@ function App() {
         <nav>Learnable</nav>
       </header>
       <main>
+        <h2>FRONTEND INTERNS</h2>
         <div className="table-wrapper">
-          <h2>FRONTEND INTERNS</h2>
           <div className="table">
             <div className="table-header">
               <p>Rank</p>
