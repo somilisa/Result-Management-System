@@ -61,6 +61,7 @@ main {
 .table-header p {
   flex: 1;
   padding: 10px;
+  text-align: center;
 }
 .table-row {
   border: 1px solid rgb(204, 204, 204);
@@ -70,6 +71,7 @@ main {
 .table-row p {
   flex: 1;
   padding: 10px;
+  text-align: center;
 }
 @keyframes App-logo-spin {
   from {
