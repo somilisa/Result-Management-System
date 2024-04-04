@@ -10,21 +10,18 @@ function App() {
         <nav>Learnable</nav>
       </header>
       <main>
-        <div class="table-wrapper">
+        <div className="table-wrapper">
           <h2>FRONTEND INTERNS</h2>
           <div className="table">
             <div className="table-header">
+              <p>Rank</p>
               <p>Name</p>
               <p>Attendance</p>
               <p>Appraisal</p>
               <p>Total</p>
             </div>
-            {sortedInterns.map((intern) => (
-              <InternCard
-                key={intern.id}
-                {...intern}
-                overallGrade={intern.overallGrade}
-              />
+            {sortedInterns.map((intern, index) => (
+              <InternCard key={intern.id} rank={index + 1} {...intern} />
             ))}
           </div>
         </div>
