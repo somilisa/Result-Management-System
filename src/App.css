@@ -28,7 +28,7 @@
 .App-header {
   box-shadow: #2b69e70d 0 1px 8px;
   height: 80px;
-  width: 100vw;
+  width: 100%;
   /* padding: 1.4rem 1.2rem; */
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
   color: #61dafb;
 }
 main {
-  width: 100vw;
+  width: 100%;
 }
 
 .table-wrapper {
@@ -67,6 +67,14 @@ main {
   border: transparent;
   border-radius: 15px;
 }
+.track-buttons button:hover {
+  transform: scale(1.05);
+}
+.track-buttons button:focus {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
 .table-header {
   display: flex;
 }
